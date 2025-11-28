@@ -27,18 +27,10 @@
 
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="page2.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="page3.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="page4.html">Enroll</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="page5.html">Contact Us</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page3.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page4.html">Enroll</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page5.html">Contact Us</a></li>
                 </ul>
 
                 <form class="d-flex">
@@ -54,90 +46,83 @@
     <div class="container bg-dark text-light p-4 rounded">
         <p class="fw-bold display-4">Enroll</p>
         <br>
+
         <blockquote class="lead">
             At O.B. Montessori Center, we are ready to help you with a smooth admission and enrollment experience for you and your child.
+            <br><br>
 
-            <div id="login-form">
-                <form id="robotics-form" action="#" method="post">
-                    <h1>Enrollment Form</h1>
-                    <br>
+            <form id="robotics-form" action="#" method="post">
 
-                    <div class="row">
-                        <div class="col">
-                            <h2>First Name</h2>
-                            <label for="first-name"></label>
-                            <input class="form-control" type="text" name="First name" id="First-name" placeholder="Type here" required>
-                        </div>
+                <h1>Enrollment Form</h1>
+                <br>
 
-                        <div class="col">
-                            <h2>Last Name</h2>
-                            <label for="full-name"></label>
-                            <input class="form-control" type="text" name="last" id="last" placeholder="Type here" required>
-                        </div>
+                <div class="row">
+                    <div class="col">
+                        <h2>First Name</h2>
+                        <label for="first-name"></label>
+                        <input class="form-control" type="text" name="first-name" id="first-name" placeholder="Type here" required>
                     </div>
 
-                    <h2>Birthday</h2>
-                    <label for="Birthday"></label>
-                    <input class="form-control" type="Date" name="" id="Birth Date" placeholder="dd/mm/yy" required>
-                    <br>
-
-                    <label for="gender">Gender</label>
-                    <select class="form-control" id="gender" name="gender" required>
-                        <option value="" disabled selected>Select</option>
-                        <option value="F">Female</option>
-                        <option value="M">Male</option>
-                    </select>
-
-                    <label for="grade-level">Grade Level</label>
-                    <select name="grade-level" id="grade-level" required>
-                        <option value="" disabled selected>Select your grade</option>
-                        <option value="Grade 7">Grade 7</option>
-                        <option value="Grade 8">Grade 8</option>
-                        <option value="Grade 9">Grade 9</option>
-                        <option value="Grade 10">Grade 10</option>
-                    </select>
-
-                    <h1>Contact Details</h1>
-                    <h2>Emal Address</h2>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Type here" required>
-
-                    <h2 class="gender-heading section-heading">Gender</h2>
-                    <div class="horizontal-group centered">
-                        <label for="female">
-                            <input type="radio" id="female" name="gender" value="Female" required> Female
-                        </label>
-                        <label for="male">
-                            <input type="radio" id="male" name="gender" value="Male"> Male
-                        </label>
+                    <div class="col">
+                        <h2>Last Name</h2>
+                        <label for="last-name"></label>
+                        <input class="form-control" type="text" name="last-name" id="last-name" placeholder="Type here" required>
                     </div>
+                </div>
 
-                    <h2 class="skills-heading section-heading">What are your skills?</h2>
-                    <div class="">
-                        <label for="coding">
-                            <input type="checkbox" name="skills[]" id="coding" value="Coding"> Coding
-                        </label>
-                    </div>
+                <h2>Birthday</h2>
+                <label for="birthday"></label>
+                <input class="form-control" type="date" name="birthday" id="birthday" required>
+                <br>
 
-                    <h2 class="mode of learning-heading section-heading">Mode of Learning</h2>
-                    <div class="horizontal-group centered">
-                        <label for="Online">
-                            <input type="radio" id="Online" name="Online" value="Female" required> Online
-                        </label>
-                        <label for="Onsite">
-                            <input type="radio" id="Onsite" name="Onsite" value="Male"> Onsite
-                        </label>
-                    </div>
+                <label for="gender-select">Gender</label>
+                <select class="form-control" id="gender-select" name="gender" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                </select>
 
-                    <h2 class="skills-heading section-heading">I confirm that the information provided is true and complete ?</h2>
-                    <div class="">
-                        <label for="coding">
-                            <input type="checkbox" name="skills" id="coding" value="Coding"> Coding
-                        </label>
-                    </div>
+                <label for="grade-level">Grade Level</label>
+                <select class="form-control" name="grade-level" id="grade-level" required>
+                    <option value="" disabled selected>Select your grade</option>
+                    <option value="Grade 7">Grade 7</option>
+                    <option value="Grade 8">Grade 8</option>
+                    <option value="Grade 9">Grade 9</option>
+                    <option value="Grade 10">Grade 10</option>
+                </select>
 
-                </form>
-            </div>
+                <h1>Contact Details</h1>
+
+                <h2>Email Address</h2>
+                <label for="email"></label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Type here" required>
+
+                <h2 class="skills-heading section-heading">What are your skills?</h2>
+                <div>
+                    <label for="skill-coding">
+                        <input type="checkbox" name="skills[]" id="skill-coding" value="Coding"> Coding
+                    </label>
+                </div>
+
+                <h2 class="mode-of-learning-heading section-heading">Mode of Learning</h2>
+                <div>
+                    <label>
+                        <input type="radio" id="online" name="mode" value="Online" required> Online
+                    </label>
+                    <label>
+                        <input type="radio" id="onsite" name="mode" value="Onsite"> Onsite
+                    </label>
+                </div>
+
+                <h2>I confirm that the information provided is true and complete</h2>
+                <div>
+                    <label for="confirmation">
+                        <input type="checkbox" id="confirmation" name="confirmation" required> Yes, I confirm
+                    </label>
+                </div>
+
+            </form>
+
         </blockquote>
     </div>
 
